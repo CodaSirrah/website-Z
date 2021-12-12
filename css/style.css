@@ -1,0 +1,476 @@
+/* Corrections */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* variables */
+
+:root {
+    --btnSize: 180px;
+}
+/* Colours */
+
+.popstar {
+    color: #D0556A !important;
+}
+
+.wheat {
+    color: wheat;
+}
+
+/* Styling */
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.content-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 64px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+   
+}
+
+header > .content-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+header p {
+    padding: 0px 10px;
+    line-height: 60px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    align-self: center;
+    margin: 0 auto;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+}   
+
+nav li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 17px;
+    right: 10px;
+    transition: all 0.4s;
+}
+
+.close-icon {
+    position: fixed;
+    top: 17px;
+    right: 10px;
+    transition: all 0.4s;
+}
+
+.hero-image {
+    width: 100%;
+    height: calc(100vh + 30px);
+    position: relative;
+    background-image: url("../images/wood-table-top-blur-kitchen-counter-3d-rendering.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-inner {
+    padding: 50vh 10px 0 10px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    border: 1px solid black;
+    outline: none;
+}
+
+.btn-animated {
+    font-size: 18px;
+    border-radius: 2px;
+    box-shadow: inset 0 0 0 0 #D0556A;
+    width: 180px;
+    height: 35px;
+    margin-right: 30px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-not-animated {
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.2s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn-animated:hover {
+    cursor: pointer;
+}
+
+.btn-animation {
+    animation: button-brighten 1s;
+}
+
+main {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main p {
+    line-height: 20px;
+}
+
+.dark-sides {
+    background-color: #2D2D2D;
+}
+
+.lightBlock, .darkBlock {
+    padding-bottom: 50px;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-section > h3 {
+    grid-row: 1;
+    margin-right: 50px;
+}
+
+
+.left-column {
+    grid-column: 1;
+}
+
+.right-column {
+    grid-column: 2;
+}
+
+.businessName {
+    display: block;
+    background-color: white;
+    padding: 15px 10px;
+    margin-bottom: 5px;
+    margin-top: -30px;
+}
+
+.businessDescription {
+    margin-bottom: 60px;
+}
+
+#services {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 64px 10px 0px 10px;
+    scroll-margin-top: 60px;
+}
+
+section > h3 {
+    padding: 50px 10px 10px 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.lightBlock  p, .darkBlock p {
+    padding: 10px;
+}
+
+main ul li::before {
+    content: "\2022";
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: 10px;
+    line-height: 20px;
+  }
+
+  #fsh {
+    font-size: 26px;
+    font-weight: 500;
+    padding: 64px 10px 0px 10px;
+    scroll-margin-top: 60px;
+  }
+
+  /* .carousel-container {
+      width: 512px;
+      height: 400px;
+      margin: auto;
+      overflow: hidden;
+  }
+
+  .carousel-slide {
+      display: flex;
+      width: 100%;
+      height: 500px;
+  } */
+
+footer {
+    width: 100%;
+    background-color: #2D2D2D;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-grid {
+    height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.footer-grid .logo {
+    height: 120px;
+    margin: auto;
+}
+
+li {
+    margin: auto;
+}
+
+ul  a:hover, .btn-not-animated:hover {
+    color: #D0556A;
+    cursor: pointer;
+}
+
+
+footer section {
+    padding: 20px;
+    margin: auto 0px;
+    font-size: 16px;
+}
+
+footer section p {
+    margin-bottom: 20px;
+}
+
+footer a {
+   text-decoration: none;
+}
+
+/* effects */
+
+.nav-scroll {
+    background-color: #2D2D2D;
+    transition: background-color 1s;
+}
+
+#hamburger-menu {
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+
+.close-vis {
+    display: none;
+    visibility: hidden;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.nav-links-vis {
+    display: initial;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* Misc */
+
+.mobile-menu {
+    z-index: 2;
+    width: 400px;
+    height: 80vh;
+    position: fixed;
+    top: calc(10vh - 10px);
+    left: 0%;
+    transform: translateX(-100%);
+    background-color: #fcfcfc;
+    -moz-box-shadow:    -3px 0 5px 0 #555;
+    -webkit-box-shadow: -3px 0 5px 0 #555;
+    box-shadow:         -3px 0 5px 0 #555;
+    transition: all 0.6s;
+    border-radius: 2px;
+    padding: 10px 0px;
+}
+
+.mobile-menu.open {
+    transform: translateX(0%);
+}
+
+.mobile-menu li {
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.mobile-menu a {
+    margin-left: 5px;
+}
+
+.mobile-menu hr {
+    width: 95%  ;
+    background-color: #2d2d2d2f;
+    border: none;
+    height: 1px;
+    margin: 10px 10px 20px 10px ;
+    float: left;
+}
+
+.contacts {
+    font-size: 15px
+}
+
+@media screen and (max-width: 1200px) {
+    nav li {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .footer-grid .logo {
+        height: 80px;
+        margin: auto;
+    }
+
+    footer section {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .grid-section {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header p {
+        font-size: 22px;
+    }
+
+    .footer-grid .logo {
+        height: 75px;
+        margin: auto;
+    }
+
+    footer section {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .mobile-menu {
+        width: 320px;
+    }
+
+    #hamburger-menu {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header p {
+        font-size: 20px;
+    }
+
+    .footer-grid .logo {
+        height: 70px;
+        margin: auto;
+    }
+
+    footer section {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .btn-animated {
+        width: 140px;
+    }
+
+    :root {
+        --btnSize: 140px;
+    }
+
+    .mobile-menu {
+        width: 280px;
+    }
+}
+
+@keyframes button-brighten {
+    0% {    
+        font-weight: 500;
+        color: black;
+        box-shadow: inset 0px 0 0 0 #D0556A;
+    }
+    25% {
+        box-shadow: inset calc(var--btnSize / 2) 0 0 0 #D0556A;
+    }
+    50% {
+        box-shadow: inset var(--btnSize) 0 0 0 #D0556A;
+        font-weight: 700;
+        color: wheat;
+    }
+    75% {
+        box-shadow: inset calc(var--btnSize / 2) 0 0 0 #D0556A;
+    }
+    100% {
+        font-weight: 500;
+        color: black;
+        box-shadow: inset 0px 0 0 0 #D0556A;
+    }
+}
